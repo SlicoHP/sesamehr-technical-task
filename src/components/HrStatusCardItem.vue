@@ -12,18 +12,15 @@ import { useCandidatesStore } from '@/stores/candidates'
 const candidatesStore = useCandidatesStore()
 const target = ref(null)
 const draggable = ref(null)
-
-// const { x, y, style } = useDraggable(draggable)
-
-onClickOutside(target, () => {
-  isOpen.value = false
-})
+const isOpen: Ref<boolean> = ref(false)
 
 const props = defineProps<{
   candidate: Candidate
 }>()
 
-const isOpen: Ref<boolean> = ref(false)
+onClickOutside(target, () => {
+  isOpen.value = false
+})
 
 const fullName: ComputedRef<string> = computed(() => {
   return `${props.candidate.firstName} ${props.candidate.lastName}`

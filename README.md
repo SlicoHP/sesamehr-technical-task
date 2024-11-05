@@ -36,9 +36,9 @@ Decidi utilizar algunas funciones de VueUse para agilizar algunas funcionalidade
 
 ## Mejoras
 
-- [ ] Añadir tests unitarios
+- [ ] Añadir mas tests unitarios
 - [ ] Añadir tests end-to-end
-- [ ] Manejo de errores: Ahora mismo no se maneja ningun error.
+- [ ] Añadir loading y manejo de errores
 - [ ] El drag and drop esta hecho sin ninguna libreria, se puede mejorar utilizando alguna libreria especial para drag and drop como `vue-drag-drop`
 - [ ] Al igual que el drag and drop, el swipe para poder hacer swipe horizontalmente se puede mejorar utilizando alguna otra libreria.
 - [ ] Hay algunos estilos que se pueden mejorar, por ejemplo, el input del buscador deberia de tener una altura de 32px y no 33.5px. La razón es que no he conseguido hacer que el input tenga exactamente 32px de altura sin utilizar height explicitamente.

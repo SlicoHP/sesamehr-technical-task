@@ -49,7 +49,9 @@ const onDrop = () => {
       <span class="block h-1 w-full rounded-sm" :class="statusClass"></span>
       <span class="flex items-center gap-1 py-1.5"
         ><component :is="statusIcon" />
-        <span class="font-bold text-dark-blue">{{ status }}</span></span
+        <span class="font-bold text-dark-blue" data-testid="status-text">{{
+          status
+        }}</span></span
       >
     </div>
     <slot />

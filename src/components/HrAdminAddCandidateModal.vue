@@ -48,9 +48,14 @@ const isFormValid = computed(() => {
       class="bg-white rounded-xl w-full max-w-screen-sm p-4 shadow-sesame-xl relative"
     >
       <div class="flex justify-end absolute top-0 right-0 p-3">
-        <icon-close class="cursor-pointer" @click="emits('close')" />
+        <icon-close
+          data-testid="close-icon"
+          class="cursor-pointer"
+          @click="emits('close')"
+        />
       </div>
       <span
+        data-testid="form-title"
         class="text-xl font-bold text-dark-blue mb-4 pb-2 block border-b border-slate-100"
       >
         {{ mode === 'add' ? 'Añadir candidato' : 'Editar candidato' }}
@@ -98,6 +103,7 @@ const isFormValid = computed(() => {
           </select>
         </div>
         <button
+          data-testid="submit-button"
           :disabled="!isFormValid"
           class="bg-dark-blue disabled:bg-slate-400 disabled:cursor-not-allowed text-white rounded-xl px-3 py-[7px] text-sm w-full max-w-[134px] ml-auto"
         >
