@@ -26,7 +26,7 @@ El proyecto esta realizado en Vue 3 con Typescript y Vite utilizando Pinia para 
 
 He utilizado la integración de Axios de VueUse para hacer las peticiones.
 
-Decidi utilizar algunas librerias de VueUse para agilizar algunas funcionalidades.
+Decidi utilizar algunas funciones de VueUse para agilizar algunas funcionalidades.
 
 `useTimeAgo`: Basado en el diseño me parecia mas apropiado que formatear la fecha.
 
